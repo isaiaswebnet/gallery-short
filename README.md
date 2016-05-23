@@ -26,18 +26,17 @@ The Gallery Shortcode on WordPress ([gallery_short id="ID DA PÁGINA OU POST DA 
 
 == License ==
 
-This file is part of Wodan Slider.
-Wodan Slider is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published
-by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+This file is part of Gallery Short.
+Gallery Short is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 Nome do teu Plugin is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 You should have received a copy of the GNU General Public License along with Nome do teu Plugin. If not, see <http://www.gnu.org/licenses/>.
 
 == Frequently Asked Questions ==
 
-= So how do i create slideshow =
+= So how do i create gallery =s
 
-* To add a gallery directly topic, enter this code <?Php echo do_shortcode ('[gallery_short id=""]'); ?> On the subject of the file wherever it appears.
+* To add a gallery directly topic, enter this code <?php echo do_shortcode ('[gallery_short id=""]'); ?> On the subject of the file wherever it appears.
 
 * Use the shortcode [gallery_short id=""] to insert it directly into the post or page by the publisher.
 
