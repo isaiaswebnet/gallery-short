@@ -1,17 +1,21 @@
 <?php
-/*
-Plugin Name: Gallery Short
-Plugin URI: http://skynetsites.com.br
-Description: The Gallery Shortcode on WordPress ([gallery_short id="ID DA PÁGINA OU POST DA GALERIA DE FOTOS"]).
-Author: Isaías Oliveira
-Author URI: http://www.facebook.com/isaiaswebnet
-Version: 1.0
+/**
+* Plugin Name: Gallery Short
+* Plugin URI: https://github.com/isaiaswebnet/gallery-short
+* Description: The Gallery Shortcode on WordPress ([gallery_short id="ID DA PÁGINA OU POST DA GALERIA DE FOTOS"]).
+* Author: Isaías Oliveira
+* Author URI: http://skynetsites.com.br
+* Version: 1.0
+* License: GPLv2 or later
+* Text Domain: gallery-short
 */
 
+if ( ! defined( 'ABSPATH' ) ) exit;
+
 function gallery_short_scripts() {
-    wp_register_script('jquery-cycle2', 'http://malsup.github.io/jquery.cycle2.js', false, false, true);
+    wp_register_script('gallery-short', 'http://malsup.github.io/jquery.cycle2.js', false, false, true);
     
-    wp_enqueue_script('jquery-cycle2');
+    wp_enqueue_script('gallery-short');
 }
 function gallery_short_head_styles() {
 	echo '<style>#gallery-short{width:75%;max-width:1170px;min-width:928px;margin:15px auto;}#gallery-short ul{width:27%;margin:0px;padding:0px;list-style-type:none;float:left;position:relative;}#gallery-short li{width:47%;float:left;margin:0 3% 3% 0;opacity:0.7;-moz-opacity:0.7;-webkit-opacity:0.7;cursor:pointer;}#gallery-short li:hover,#gallery-short li.cycle-pager-active{opacity:1;-moz-opacity:1;-webkit-opacity:1;}#gallery-short li img{width:100%;}#gallery-short .main-image{width:73%;float:right;}#gallery-short .main-image img{width:100%;}#gallery-short .caption{margin:20px 0 0 0;}#gallery-short .caption h3{width:26%;text-align:right;color:#2c4340;font-size:140%;display:block;float:left;}#gallery-short .caption p{width:73%;float:right;font-size:18px;color:#2c4340;margin:3px 0;}#gallery-short .clear {clear:both;display:block;}</style>';
